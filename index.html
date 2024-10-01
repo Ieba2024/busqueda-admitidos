@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Datos en Google Sheets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Buscar Datos en Google Sheets</h1>
+
+    <div class="input-group">
+        <!-- Solo un campo para buscar por número de documento -->
+        <input type="text" id="documento" placeholder="Buscar por número de documento">
+        <button onclick="buscarDatos()">Buscar</button>
+    </div>
+
+    <h2>Resultados:</h2>
+    <table id="resultados">
+        <thead>
+            <tr>
+                <th>Número de Documento</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los resultados aparecerán aquí -->
+        </tbody>
+    </table>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
