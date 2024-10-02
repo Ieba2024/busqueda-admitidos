@@ -29,6 +29,7 @@ function buscar() {
                 const apellidos = rows[i][7]; // Columna H
                 const grado = rows[i][15]; // Columna P
                 const estado = rows[i][23]; // Columna X
+                const observaciones = rows[i][20]; // Columna U
 
                 // Verificar si el documento coincide
                 if (numeroDocumento === documentNumber) {
@@ -39,6 +40,7 @@ function buscar() {
                         <p><strong>Apellidos:</strong> ${apellidos}</p>
                         <p><strong>Grado:</strong> ${grado}</p>
                         <p><strong>Estado de la solicitud:</strong> ${estado}</p>
+                        <p><strong>Observaciones:</strong> ${observaciones}</p>
                     `;
                     break;
                 }
