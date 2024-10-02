@@ -7,32 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="container">
-    <h1>Buscar Estado de Solicitud</h1>
-
-    <div class="input-group">
-        <!-- Solo un campo para buscar por número de documento -->
-        <input type="text" id="documento" placeholder="Buscar por número de documento">
-        <button onclick="buscarDatos()">Buscar</button>
+    <div class="container">
+        <h1>Buscar Estado de Solicitud</h1>
+        <div class="form-group">
+            <label for="document">Número de documento:</label>
+            <input type="text" id="document" placeholder="Ingresa el número de documento">
+        </div>
+        <button onclick="buscar()">Buscar</button>
+        
+        <div class="result" id="result"></div>
     </div>
 
-    <h2>Resultados:</h2>
-    <table id="resultados">
-        <thead>
-            <tr>
-                <th>Número de Documento</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Correo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Los resultados aparecerán aquí -->
-        </tbody>
-    </table>
-</div>
-
-<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
