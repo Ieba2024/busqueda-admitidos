@@ -76,3 +76,13 @@ button:hover {
     font-weight: bold;
     text-align: center;
 }
+
+result-row {
+    display: flex; /* Alinea los elementos en una fila */
+    gap: 5px; /* Espacio entre los elementos */
+    margin-bottom: 5px; /* Espaciado inferior */
+}
+
+.result-row div {
+    flex: 1; /* Permite que los elementos ocupen el mismo espacio */
+}
