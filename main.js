@@ -1,5 +1,5 @@
-const apiKey = "AIzaSyCiaxUnd6wLeHZ-pjk7Ftv2u5ugF8DdljQ";
-const sheetId = "1FUGinzroMvMi5CRA5rU-iuF4nBz9eVKUV3xG-yGjL3E";
+const apiKey = "AIzaSyCaSQjxJOSj8bZfd0-Xp_FHS2L6zn65xmw";
+const sheetId = "1_qJMbgOtry_jRNDIf-3tEiUOW6CqePdfw5U7tl6Kawc";
 const baseUrl = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values`;
 
 // Función para buscar el número de documento en Google Sheets
