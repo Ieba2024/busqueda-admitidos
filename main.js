@@ -48,11 +48,11 @@ function buscar() {
                     // Verificar qué columna (AG, AH o AI) usar para mostrar requisitos
                     let requisitosAdicionales = [];
                     if (requisitos === "1") {
-                        requisitosAdicionales = rows.slice(1, 10).map(row => row[32] || "Sin información"); // Columna AG
+                        requisitosAdicionales = rows.slice(1, 11).map(row => row[32] || "Sin información"); // Columna AG
                     } else if (requisitos === "2") {
-                        requisitosAdicionales = rows.slice(1, 11).map(row => row[33] || "Sin información"); // Columna AH
+                        requisitosAdicionales = rows.slice(1, 12).map(row => row[33] || "Sin información"); // Columna AH
                     } else if (requisitos === "3") {
-                        requisitosAdicionales = rows.slice(1, 9).map(row => row[34] || "Sin información"); // Columna AI
+                        requisitosAdicionales = rows.slice(1, 10).map(row => row[34] || "Sin información"); // Columna AI
                     }
 
                     const requisitosHTML = requisitosAdicionales
