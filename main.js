@@ -10,8 +10,8 @@ function buscar() {
         alert("Por favor, ingresa un número de documento.");
         return;
     }
-    
-    const url = `${baseUrl}/RESPUESTATODOS!A2:AI?key=${apiKey}`;
+// Hoja de google shets
+    const url = `${baseUrl}/Respuestas de formulario 2026!A2:AI?key=${apiKey}`;
     
     fetch(url)
         .then(response => response.json())
@@ -87,3 +87,4 @@ function buscar() {
             document.getElementById("result").innerHTML = `<p class="error">Ocurrió un error al buscar los datos. Inténtalo de nuevo más tarde.</p>`;
         });
 }
+
